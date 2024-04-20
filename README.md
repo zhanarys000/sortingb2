@@ -30,5 +30,50 @@ To use these sorting algorithms, import the desired functions from the `sorting`
 
 ```rust
 use sorting::{quick_sort, selection_sort, insertion_sort, merge_sort};
+```
+## Examples
+
+### Quick Sort
+
+```rust
+use sorting::{quick_sort};
+
+let mut numbers = vec![9, 7, 5, 3, 0, 1, 4, 2, 8];
+quick_sort(&mut numbers);
+println!("Numbers Quick Sorted: {:?}", numbers);
+```
+### Selection Sort
+
+```rust
+use sorting::{selection_sort};
+
+let mut words = vec!["mustang", "camaro", "corvette", "challenger", "civic"];
+    selection_sort(&mut words);
+    println!("Words Selection Sorted: {:?}", words);
+````
+### Insertion Sort
+
+```rust
+use sorting::{insertion_sort};
+
+let mut floats = vec![1.5, 2.5, 3.5, 4.5, 6.5];
+insertion_sort(&mut floats);
+println!("Insertion Sorted: {:?}", floats);
+```
+### Merge Sort
+
+```rust
+use sorting::{merge_sort};
+
+let mut characters = vec!['z', 'y', 'x', 'w', 'v'];
+merge_sort(&mut characters);
+println!("Characters Merge Sorted: {:?}", characters);
+```
+### Sorting Results
+![image](https://github.com/zhanarys000/sortingb2/assets/124418761/440b72fb-8396-4c07-8f28-a6753720ed41)
+
+
+
+
 
 
